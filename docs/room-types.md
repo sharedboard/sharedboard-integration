@@ -33,6 +33,9 @@ interface RoomRequest {
 
   // Groups which are allowed to join this room. Relevant only if this room is private.
   groups?: string[];
+  
+  // Initial content of the board. Don't set this unless you know what you are doing
+  initialContent?: any;
 }
 ```
 
